@@ -1,6 +1,6 @@
 (ns aoc.2020.1-day
   "Report repair"
-  (:use [util.io :only [read-file-int]])
+  (:use [util.io :only [read-input-int]])
   (:use [clojure.math.combinatorics :only [combinations]]))
 
 (defn sums-into-2020 [numbers]
@@ -17,6 +17,6 @@
        (reduce *)))
 
 (defn main []
-  (println (solve (read-file-int "resources/1-report-repair/input.txt"))))
+  (println (solve (read-input-int 1))))
 
 (main)
